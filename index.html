@@ -14,13 +14,17 @@
      <h2>Pick a Dog!</h2>
      <p> Only works with main breeds, not sub-breeds, i.e. 'setter' not 'irish setter.'</p>
      <form id='js-form'>
-       <label for='breed'>What breed?</label>
-       <input type="text" id='breed' name='breed' required>
+      <div class='formthing'> 
+        <label for='breed'>What breed?</label>
+        <input type="text" id='breed' name='breed' required>
+      </div>
+      <div class='formthing'> 
        <label for='goodness'>How good?</label>
        <select id='goodness' name='goodness'>
          <option value='verygood'> Very Good! </option>
          <option value='notgood'> Not So Good. </option>
-       <input type='submit' value="Submit">
+      </div>
+       <input class='submit' type='submit' value="Submit">
      </form> 
 
       

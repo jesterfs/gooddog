@@ -10,3 +10,19 @@ img {
   margin-top: 25px;
   margin-bottom: 25px;
 }
+
+.submit {
+  display: block;
+  margin-top: 5px;
+}
+
+.formthing {
+  display: block;
+  margin-top: 5px;
+}
+
+@media and all (min-width: 800px){
+  .formthing {
+    display: inline-block;
+  }
+}
