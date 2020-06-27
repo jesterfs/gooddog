@@ -29,7 +29,8 @@ function watchForm(){
   $(`#js-form`).submit(e => {
     e.preventDefault();
     // $('#result').replaceWith(' ');
-    let breed = $('#breed').val();
+    let breedVal = $('#breed').val();
+    let breed = breedVal.toLowerCase();
     let goodness = $('#goodness').val();
     if (goodness === 'notgood'){
       $('#result').html('<p id="bad"> DOES NOT EXIST, FASCIST!</p>')
