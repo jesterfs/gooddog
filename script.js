@@ -33,7 +33,7 @@ function watchForm(){
     let breed = breedVal.toLowerCase();
     let goodness = $('#goodness').val();
     if (goodness === 'notgood'){
-      $('#result').html('<p id="bad"> DOES NOT EXIST, FASCIST!</p>')
+      $('#result').html('<p id="bad"> DOES NOT EXIST, FASCIST!</p> <p> All dogs are very good</p>')
     } else {
       fetchDog(`https://dog.ceo/api/breed/${breed}/images/random/1`);
     }
