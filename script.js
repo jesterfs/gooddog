@@ -41,16 +41,22 @@ function watchForm(){
   )
 }
 
-function feelingLucky(){
-  $('#feelingLucky').click(e => {
+function feelingLucky(){$('#feelingLucky').click(e => {
     let url = `https://dog.ceo/api/breeds/image/random/1`;
     fetch(url)
-      .then (response => response.json())
-      .then (responseJson => displayResults(responseJson))
-
-    
-  })
+    .then(response => response.json())
+    .then(responseJson => displayResults(responseJson))
+    .catch(e => {
+      $('#result').html(`<p id='error'>hmmm... something went wrong.</p>`)
+    } )
+  })  
 }
+  
+
+
+
+
+
 
 function onLoad(){
   watchForm();
