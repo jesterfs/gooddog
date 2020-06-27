@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+   <header>
+     <h1>Want a dog?</h1>
+   </header> 
+   <main>
+     <h2>Pick a Dog!</h2>
+     <form id='js-form'>
+       <label for='breed'>What breed?</label>
+       <input type="text" id='breed' name='breed' required>
+       <label for='goodness'>How good?</label>
+       <select id='goodness' name='goodness'>
+         <option value='verygood'> Very Good! </option>
+         <option value='notgood'> Not So Good. </option>
+       <input type='submit' value="Submit">
+     </form> 
+       
+     <button type="button" id="feelingLucky">Feeling Lucky?</button>
+     <div id="result">
+     </div>  
+   </main>    
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
